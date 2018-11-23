@@ -1,41 +1,312 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Rishabh Rawat | Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Rishabh Rawat's Portfolio" />
-		<meta name="keywords" content="Portfolio, Rishabh" />
-		<meta name="author" content="Rishabh Rawat" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Rishabh Rawat</h1>
-						<p>Open Source &nbsp;&bull;&nbsp; ML enthusiast &nbsp;&bull;&nbsp; Cryptography Novice &nbsp;&bull;&nbsp; Competitive Programmer</p>
-						<nav>
-							<ul>
-								<li><a href="https://www.linkedin.com/in/rishabh570/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://www.facebook.com/rishabh.rawat.184" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="https://medium.com/@icode365" class="icon fa-medium"><span class="label">Facebook</span></a></li>
-								<li><a href="https://github.com/rishabh570" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="mailto:icode365@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rishabh Rawat Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
 
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="wrapper">
+        <div id="lead">
+            <div id="lead-content">
+                <h1>Rishabh Rawat</h1>
+                <h2>Full Stack Web Developer</h2>
+                <form method="get" action="docs/resume.pdf">
+                    <button class="btn btn-success btn-lg" type="submit">Download Resume</button>
+                </form>
+            </div>
+    
+            <div id="lead-overlay"></div>
+    
+            <video autoplay loop muted preload="auto">
+                <source src="media/Travaho.mp4">
+                <source src="media/Travaho.ogv">
+                <source src="media/Travaho.webm">
+            </video>
+    
+            <div id="lead-down">
+                <span>
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+        <!-- End #lead -->
+    </div>
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        I'm a full stack web developer currently in my Junior year. Trying to be creative here...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="October 2018 – Present">
+                <h3>PublicLab</h3>
+                <h4>Google Code-In Mentor</h4>
+                <p>
+                        I help students of Google code-in in PR review, issue clarification, navigate them in the right direction and in general answer their queries.
+                </p>
+            </div>
+            
+            <div data-date="June 2018 – August 2018">
+                <h3>Malik Ventures</h3>
+                <h4>Web Developer</h4>
+                <p>
+                    Worked as a full stack developer at Malik Ventures, helped in shifting the whole architecture of their projects from Jquery to React (& Redux), was one of the team member responsible for their fully functional test series for students on which thousand of students can give their tests, made admin panel for Doctors for Radix Healthcare Hospital.
+                    Projects I've contributed to are Malik ventures portfolio site, Radixhealth Care (For Hospital, managing the departments, doctors etc., for Admin) and Harvin Academy.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>Maharaja Surajmal Institute of Technology</h3>
+            <span class="education-date">August 2016 - August 2020</span>
+            <h4>Bachelor of Technology in Electronics and Communication</h4>
+            <p>
+                I'm currently doing my undergrad in Electronics and Communication, but I like to work on Web Development projects side by side
+            </p>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>Rajakiya Pratibha Vikas Vidhyalaya</h3>
+            <span class="education-date">Till 2015</span>
+            <h4>High School</h4>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project1.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Refresher</h3>
+                        <p>
+                            The idea behind this website is to show stressed people other's point of view about their problems related to work, it's basically an argumentative way to tackle people's stress.
+                            Has a REST API which makes it very easy to integrate with other services (like webhooks to 3rd parties)...    
+                            Tech used:- Python, Django, Ajax, javascript, jquery, Disqus API, Django Rest Framework
+                        </p>
+                        <a href="https://github.com/rishabh570/refresher">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Chatroom</h3>
+                        <p>
+                            A simple chatroom made with Django Channels, you can chat in a room with your friends. Chats are async, so no need to reload :)
+                        </p>
+                        <a href="https://github.com/rishabh570/chatroom/">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Stalker</h3>
+                        <p>
+                            See what your friends are upto on Github. Just enter the username of your friend and see his/her latest activity, from his stars to his commits, everything!
+                        </p>
+                        <a href="https://github.com/rishabh570/Stalker/">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>React</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form action="https://formspree.io/www.rrawat555@gmail.com" method="POST" />
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2018 Rishabh Rawat
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/rishabh570" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/rishabh570" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/rishabh.rawat.184" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/rishabh_570" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://medium.com/@rishabh570" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="js/scripts.min.js"></script>
+
+    <!-- Chatra {literal} -->
+    <script>
+        (function(d, w, c) {
+            w.ChatraID = 'ZiejjcPR5YjTGgdGT';
+            var s = d.createElement('script');
+            w[c] = w[c] || function() {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            s.async = true;
+            s.src = 'https://call.chatra.io/chatra.js';
+            if (d.head) d.head.appendChild(s);
+        })(document, window, 'Chatra');
+    </script>
+    <!-- /Chatra -->
+
+    <!-- CUSTOM SCRIPT -->
+    <script>
+        $(document).ready(function(){
+  
+        var vid = $('video');
+        var vid_w_orig = 1280;
+    var vid_h_orig = 720;
+
+        // re-scale image when viewport resizes
+            $(window).resize(function(){
+            
+                // get the parent element size
+                var container_w = vid.parent().width();
+                var container_h = vid.parent().height();
+            
+                // use largest scale factor of horizontal/vertical
+                var scale_w = container_w / vid_w_orig;
+                var scale_h = container_h / vid_h_orig;
+                var scale = scale_w > scale_h ? scale_w : scale_h;
+            
+                // scale the video
+                vid.width(scale * vid_w_orig);
+                vid.height(scale * vid_h_orig);
+            
+            });
+        
+        // trigger re-scale on pageload
+            $(window).trigger('resize');
+        
+        });
+    </script>
+</body>
+
 </html>
