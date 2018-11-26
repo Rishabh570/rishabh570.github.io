@@ -158,15 +158,15 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/project3.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Chatroom</h3>
+                        <h3>Firefox extension</h3>
                         <p>
-                            A simple chatroom made with Django Channels, you can chat in a room with your friends. Chats are async, so no need to reload :)
+                            A customizable dynamic theme extension for Firefox, feels more in control.
                         </p>
-                        <a href="https://github.com/rishabh570/chatroom/">View Project</a>
+                        <a href="https://addons.mozilla.org/en-US/firefox/addon/themedd/">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -195,13 +195,24 @@
     <div id="skills">
         <h2 class="heading">Skills</h2>
         <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Node.js</li>
-            <li>React</li>
-            <li>C</li>
-            <li>C++</li>
-            <li>React</li>
+            <li>
+                <img src="./images/js.png" alt="javascript" height="80" width="80">
+            </li>
+            <li>
+                <img src="./images/python.jpeg" alt="python" height="80" width="80">
+            </li>
+            <li>
+                <img src="./images/react.png" alt="react" height="80" width="80">
+            </li>
+            <li>
+                <img src="./images/cpp.png" alt="cpp" height="80" width="80">
+            </li>
+            <li>
+                <img src="./images/redux.png" alt="redux" height="80" width="80">
+            </li>
+            <li>
+                <img src="./images/django.png" alt="django" height="80" width="80">
+            </li>
         </ul>
     </div>
     <!-- End #skills -->
@@ -276,25 +287,25 @@
     </script>
     <!-- /Chatra -->
 
-    <!-- CUSTOM SCRIPT -->
+    <!-- CUSTOM SCRIPT FOR VIDEO RESIZE-->
     <script>
         $(document).ready(function(){
   
-        var vid = $('video');
-        var vid_w_orig = 1280;
-    var vid_h_orig = 720;
+        let vid = $('video');
+        let vid_w_orig = 1280;
+        let vid_h_orig = 720;
 
         // re-scale image when viewport resizes
             $(window).resize(function(){
             
                 // get the parent element size
-                var container_w = vid.parent().width();
-                var container_h = vid.parent().height();
+                let container_w = vid.parent().width();
+                let container_h = vid.parent().height();
             
                 // use largest scale factor of horizontal/vertical
-                var scale_w = container_w / vid_w_orig;
-                var scale_h = container_h / vid_h_orig;
-                var scale = scale_w > scale_h ? scale_w : scale_h;
+                let scale_w = container_w / vid_w_orig;
+                let scale_h = container_h / vid_h_orig;
+                let scale = scale_w > scale_h ? scale_w : scale_h;
             
                 // scale the video
                 vid.width(scale * vid_w_orig);
@@ -302,7 +313,7 @@
             
             });
         
-        // trigger re-scale on pageload
+            // trigger re-scale on pageload
             $(window).trigger('resize');
         
         });
