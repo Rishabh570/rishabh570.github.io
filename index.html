@@ -24,7 +24,7 @@
         <div id="mobile-menu-close">
             <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <ul id="menu" class="shadow">
+        <ul id="menu">
             <li>
                 <a href="#about">About</a>
             </li>
@@ -51,7 +51,7 @@
         <div id="lead">
             <div id="lead-content">
                 <h1>Rishabh Rawat</h1>
-                <h2>Full Stack Web Developer</h2>
+                <h2>Backend Web Developer</h2>
                 <form method="get" action="docs/resume.pdf">
                     <button class="btn btn-success btn-lg" type="submit">Download Resume</button>
                 </form>
@@ -59,13 +59,10 @@
     
             <div id="lead-overlay"></div>
     
-            <video autoplay loop muted preload="auto">
-                <source src="media/Travaho.mp4">
-                <source src="media/Travaho.ogv">
-                <source src="media/Travaho.webm">
-            </video>
-    
+            <img id="banner" src="images/banner.jpg" alt="Background Image">
+
             <div id="lead-down">
+              
                 <span>
                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
                 </span>
@@ -272,7 +269,7 @@
 
     <script src="js/scripts.min.js"></script>
 
-    <!-- Chatra {literal} -->
+    <!-- Chatra messenger -->
     <script>
         (function(d, w, c) {
             w.ChatraID = 'ZiejjcPR5YjTGgdGT';
@@ -285,39 +282,8 @@
             if (d.head) d.head.appendChild(s);
         })(document, window, 'Chatra');
     </script>
-    <!-- /Chatra -->
+    <!-- Script ends -->
 
-    <!-- CUSTOM SCRIPT FOR VIDEO RESIZE-->
-    <script>
-        $(document).ready(function(){
-  
-        let vid = $('video');
-        let vid_w_orig = 1280;
-        let vid_h_orig = 720;
-
-        // re-scale image when viewport resizes
-            $(window).resize(function(){
-            
-                // get the parent element size
-                let container_w = vid.parent().width();
-                let container_h = vid.parent().height();
-            
-                // use largest scale factor of horizontal/vertical
-                let scale_w = container_w / vid_w_orig;
-                let scale_h = container_h / vid_h_orig;
-                let scale = scale_w > scale_h ? scale_w : scale_h;
-            
-                // scale the video
-                vid.width(scale * vid_w_orig);
-                vid.height(scale * vid_h_orig);
-            
-            });
-        
-            // trigger re-scale on pageload
-            $(window).trigger('resize');
-        
-        });
-    </script>
 </body>
 
 </html>
