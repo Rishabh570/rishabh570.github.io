@@ -141,13 +141,13 @@ header {
         display: block;
         color: whitesmoke;
         padding: 10px;
-        transition: 0.7s ease-out;
+        transition: 0.5s ease-out;
 
         &:hover {
-            color: $base-color-hover;
+            color: #111111;
             text-decoration: none;
-            background: rgba(253, 253, 253, 0.411);
-            border-radius: 0.6em;
+            background: rgba(65, 255, 7, 0.356);
+            border-radius: 0.3em;
         }
 
         &:focus {
