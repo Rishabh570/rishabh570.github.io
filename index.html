@@ -5,11 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rishabh Rawat Portfolio</title>
+    <title>Rishabh Rawat (rishabh570) 💻</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -53,16 +56,17 @@
                 <h1>Rishabh Rawat</h1>
                 <h2>Backend Web Developer</h2>
                 <form method="get" action="docs/resume.pdf">
-                    <button class="btn btn-lg" type="submit">Download Resume</button>
+                    <button class="btn btn-lg" type="submit">
+                        <span id="resume-text">Resume</span>
+                    </button>
                 </form>
             </div>
     
             <div id="lead-overlay"></div>
     
-            <img class="asyncImage" id="banner" src="images/banner_min.jpg" alt="Background Image">
+            <img class="asyncImage" id="banner" src="images/mountain_background.jpg" alt="Background Image">
 
             <div id="lead-down">
-              
                 <span>
                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
                 </span>
@@ -79,7 +83,7 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        I'm a Backend web developer currently in my Junior year. I've worked on Python/Django, Node/Express and currently learning Ruby/Ruby On Rails. 
+                        Hi I'm Rishabh. I love developing reliable services and command line app.
                     </p>
                 </div>
             </div>
@@ -137,6 +141,22 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
+                        <img height="150px" width="365px" src="images/cricfeed_screenshot.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Cricfeed</h3>
+                        <p>
+                            A command line utility to get real time scores of live cricket matches, at your terminal. 🏏💻
+                        </p>
+                        <a href="https://github.com/rishabh570/cricfeed">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
                         <img src="images/project1.png" />
                     </div>
                     <!-- End .project-image -->
@@ -148,22 +168,6 @@
                             Tech used:- Python, Django, Ajax, javascript, jquery, Disqus API, Django Rest Framework
                         </p>
                         <a href="https://github.com/rishabh570/refresher">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project3.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Firefox extension</h3>
-                        <p>
-                            A customizable dynamic theme extension for Firefox, feels more in control.
-                        </p>
-                        <a href="https://addons.mozilla.org/en-US/firefox/addon/themedd/">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -266,8 +270,8 @@
     <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
     <script src="js/scripts.min.js"></script>
+
 
     <!-- Chatra messenger -->
     <script>
